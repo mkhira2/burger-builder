@@ -1,9 +1,9 @@
 # Burger Builder
 
-Want a burger? Build it! Select your ingredients which auto-updates a picture preview of your burger and adjusts the price. Checkout and enjoy. Made with love and React.
+Want a burger? Build it! Select your ingredients which auto-updates a picture preview of your burger and adjusts the price. Checkout and enjoy. Built for desktop and optimized for mobile. Made with love and React.
 
 ## Screenshot
-![BurgerBuilder](/src/assets/images/hashiru.png)
+![BurgerBuilder](/src/assets/images/burger-builder.png)
 
 ## Installation
 
