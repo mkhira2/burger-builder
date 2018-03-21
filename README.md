@@ -13,5 +13,5 @@ cd burger-builder
 npm install
 npm start
 
-open localhost:3000 in the browser
+localhost:3000 will open automatically in the browser
 ```
