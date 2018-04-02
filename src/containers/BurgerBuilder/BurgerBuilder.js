@@ -86,28 +86,29 @@ purchaseCancelHandler = () => {
 }
 
 purchaseContinueHandler = () => {
-    this.setState({loading: true})
-    const order = {
-        ingredients: this.state.ingredients,
-        price: this.state.totalPrice,
-        customer: {
-            name: 'Kenji Hirabayashi',
-            address: {
-                street: '125 Burger Drive',
-                zipCode: '90210',
-                country: 'United States'
-            },
-            email: 'ilove@burgers.com',
-        },
-        deliveryMethod: 'fastest'
-    }
-    axios.post('/orders.json', order)
-        .then(response => {
-            this.setState({ loading: false, purchasing: false })
-        })
-        .catch(error => {
-            this.setState({ loading: false, purchasing: false })
-        });
+    // this.setState({loading: true})
+    // const order = {
+    //     ingredients: this.state.ingredients,
+    //     price: this.state.totalPrice,
+    //     customer: {
+    //         name: 'Kenji Hirabayashi',
+    //         address: {
+    //             street: '125 Burger Drive',
+    //             zipCode: '90210',
+    //             country: 'United States'
+    //         },
+    //         email: 'ilove@burgers.com',
+    //     },
+    //     deliveryMethod: 'fastest'
+    // }
+    // axios.post('/orders.json', order)
+    //     .then(response => {
+    //         this.setState({ loading: false, purchasing: false })
+    //     })
+    //     .catch(error => {
+    //         this.setState({ loading: false, purchasing: false })
+        // });
+        this.props.history.push('/checkout');
 }
 
     render () {
